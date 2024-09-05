@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coding Hub</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+       <section id="contact">
+      <h1>Contact Us</h1>
+      <em><b>Get in Touch with us</b></em>
+<p>
+  Want to learn more about Coding Hub or have a question? <p>Contact us at mail support: &nbsp <a href="">atendorisaac@gmail.com</a></p> 
+  <p>or chat with us on Whatsapp<big><a href="https://wa.me/+2349064178174">@+2349064178174</a></big></p>
+    </p>
+    <footer>
+      
+     <p><marquee>Izic✨ Coding Hub  gives more insight and top stories on coding be a part to explore!</marquee></p>
+     </footer>
+     
+              <!--  ai -->
+        <section id="chatbox">
+            <div id="messages"></div>
+            <input id="user-input" type="text" placeholder="Ask a coding question...">
+            <br>
+            <button id="send-btn">Send</button>
+        </section>
+    </main>
+  
+     <script src="script.js"></script>
+  
+</body>
+</html>
+
+
+
+<style>
+    main{
+  display: flex;
+  flex-direction: column;
+  align-itemmains: center;
+  padding: 2em;
+} 
+
+  section{
+  background-color: #24271751;
+  padding: 1em;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+response{
+  margin-bottom: 20px;
+  
+ header{
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+#chatbox{
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    white-space: pre-wrap;
+    
+}
+
+#messages{
+    padding: 1em;
+}
+
+#user-input{
+    width: 70%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#send-btn{
+    width: 20%;
+    padding: 0.5em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+#send-btn:hover{
+    background-color: #3e8e41;
+} 
+
+</style>
+
+
+
+<script>
+    const questionsAndAnswers = {
+    "what is html": "HTML stands for HyperText Markup Language",
+    "what is css": "CSS stands for Cascading Style Sheets",
+    "what is javascript": "JavaScript is a programming language",
+   "what's coding": "Coding, also known as computer programming, is the process of designing, writing, testing, and maintaining the instructions that a computer follows to perform a specific task. These instructions, called *code*, are written in one or more programming languages, which are used to communicate with a computer.     *Coding involves:..1. *Analysis*: Identifying a problem or need and defining the requirements for a solution..2. *Design*: Creating a detailed plan or algorithm for solving the problem..3. *Implementation*: Writing the code in a programming language..4. *Testing*: Verifying that the code works correctly and fixing errors...5. *Maintenance*: Updating and modifying the code to ensure it continues to work as needed...Coding is used in various fields, including:.1. *Web development*: Building websites, web applications, and mobile applications..2. *Software development*: Creating operating systems, games, and productivity software..3. *Data analysis*: Working with data to extract insights and visualize information..4. *Artificial intelligence*: Building intelligent systems that can learn and adapt..5. *Internet of Things*: Connecting devices and sensors to create smart environments..*Programming languages, such as Python, JavaScript, HTML/CSS, and Java, are used for coding. Coders, or programmers, use various tools, including text editors, IDEs (Integrated Development Environments), and version control systems, to write and manage code.",
+   "who started coding": "long ago in the The origin of coding, or computer programming, dates back to the early 19th century. Here is a brief overview:*1822: Charles Babbage proposed the idea of a mechanical computer, the Difference Engine........  *1843: Ada Lovelace, daughter of Lord Byron, wrote the first algorithm intended to be processed by a machine (the Analytical Engine). She is considered the first computer programmer.......*1936: Konrad Zuse developed the first fully automatic digital computer, the Z1...........*1940s: The development of modern computer programming began during World War II, with pioneers like:....Alan Turing (UK): Developed the theoretical foundations of modern computer science....Grace Hopper (US): Created the first compiler and developed COBOL....John von Neumann (Hungary/US): Contributed to the development of the modern computer architecture..........*1950s-1960s: The first programming languages emerged, such as:1. Short Code (1947).2.Assembly languages (1947).3.COBOL (1959) .4.FORTRAN (1957) .5.LISP (1958)....1970s-1980s: The personal computer revolution began, with the development of:.1. BASIC (1975) .2. C (1972) .3.Pascal (1970) .4. Java (1991)...Note: This is a condensed timeline, and there were many other contributors to the evolution of coding and computer programming.",
+   "What does HTML stand for?": "HyperText Markup Language",
+  "What is the basic structure of an HTML document?": "`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`",
+  "What is the purpose of the `<div>` tag?": "To define a division or section in an HTML document",
+    "What does CSS stand for?": "Cascading Style Sheets,",
+  "How do you select an HTML element in CSS?": "Using the `#` symbol for IDs or `.` for classes",
+  "What is the difference between margin and padding?": "Margin is outside the element, padding is inside",
+  "What is the purpose of the `var` keyword?": "To declare a variable",
+  "What is the difference between `==` and `===`?": "`==` checks value, `===` checks value and type",
+  "How do you create an array in JavaScript?": "Using `[]` or `new Array()`",
+  "How do you create an object in JavaScript?": "Using `{}` or `new Object()`",
+    "How do you debug code?": "Using tools like console.log or a debugger", 
+};
+
+const userInput = document.getElementById('user-input');
+const sendBtn = document.getElementById('send-btn');
+const messagesContainer = document.getElementById('messages');
+
+sendBtn.addEventListener('click', () => {
+    const userQuery = userInput.value.trim().toLowerCase();
+    if (userQuery) {
+        const response = questionsAndAnswers[userQuery];
+        if (response) {
+            displayResponse(response);
+        } else {
+            displayResponse("Sorry, question undefined.!");
+        }
+        userInput.value = '';
+    }
+});
+
+function displayResponse(responseText) {
+  const responseDiv = document.createElement('div');
+  responseDiv.textContent = responseText;
+  messagesContainer.appendChild(responseDiv);
+}
+
+function displayError(errorMessage) {
+  const errorDiv = document.createElement('div');
+  errorDiv.textContent = errorMessage;
+  errorDiv.style.color = 'red';
+  messagesContainer.appendChild(errorDiv);
+}
+
+function displayResponse(responseText) {
+    const responseDiv = document.createElement('div');
+    responseDiv.textContent = responseText;
+    messagesContainer.appendChild(responseDiv); 
+    }
+  
+  function displayResponse(responseText) {
+  const responseDiv = document.createElement('div');
+  responseDiv.textContent = responseText;
+  messagesContainer.appendChild(responseDiv);
+  // Add a line break
+  const lineBreak = document.createElement('br');
+  messagesContainer.appendChild(lineBreak);
+}
+    
+  
+</script>
