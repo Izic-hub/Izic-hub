@@ -1,9 +1,8 @@
 - 👋 Hi, I’m @Izic-hub
-- 👀 I’m interested in coding 
+- 👀 I love  coding 
 - 🌱 I’m currently learning .HTML,CSS & JAVASCRIPT!
 - 💞️ I’m looking to collaborate on .any project partaining html & css
-- 📫 How to reach me .whatsapp @09064178174
-- 😄 Pronouns: ...
+- 📫 How to reach me .whatsapp @+23490641781
 - ⚡ Fun fact: just me a guitarist and a coder!
 
 <!---
