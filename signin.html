@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coding-Hub | signin</title>
+  <link rel="icon" href="logo.png">
+ <link rel="stylesheet" href="style.css">
+  </head> 
+<body>
+   <section class="login-form">
+       <h1><img src="front.png" height="30" width="30">Izic✨ Coding-Hub</h1>
+      <br><br>
+        <form action="main.html"  class="login">
+         <label>Username:</label>
+            <input type="text" class="username" placeholder="username"  required>
+            <br>
+        <label>Password:</label>
+            <input type="password" class="password" placeholder="password" minlength="5" maxlength ="7" required>
+           <br>
+          <input type="checkbox" class="checkbox" id="remember">
+            <label for="remember" class="label">Remember me </label> 
+          
+            
+            <br><br>
+            <button type="submit" class="submit">Login</button>
+            <p>Dont have an account? <a id="reg" href="signup.html">Register</a></p>
+        </form>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
+  
+ <style>
+     
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: fantasy;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ai.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+h1{
+    margin-top: 3rem;
+    color: #d5e8e8f2;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+    
+
+.login-form{
+    margin: 1.5rem;
+    border-radius: 0;
+    border: 3px  solid #b6d1da66;
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 30rem;
+   text-align: center;
+   border-radius: 10px;
+}
+
+.username, .password{
+    padding: 1em;
+    padding-left: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    width: 20rem;
+}
+
+.submit{
+    display: inline-block;
+    margin: 0 0 0 1rem;
+    padding: 0.5rem;
+    width: 19rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #c5d7d722;
+    font-size: 1.5em;
+    color: #e1f5f5a1;
+}
+
+.submit:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.checkbox{
+    padding: 2rem;
+    display: inline-block;
+}
+
+.label{
+    padding-right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color:  #d5e8e8b6;
+}
+
+a, p{
+    display: inline-block;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1rem;
+    margin: 1rem 0 2rem 0;
+    color:  #d5e8e8b6;
+}
+ #reg{
+     font-size: 1.5em;
+     color: #8ff5c4df;
+ }
+ label{
+     color: #d5e8e8f2;
+ }
+ input{
+     color: #8fa5acfa;
+     outline: none;
+ }
+ </style>
+  
+  
+  <script>
+      
+  </script>

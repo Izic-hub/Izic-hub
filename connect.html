@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coding-Hub | connect</title>
+     <link rel="icon" href="logo.png">
+ <link rel="stylesheet" href="style.css">
+  </head> 
+<body>
+    <nav>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+        <li><a href="#"><kbd><big>Izic✨ Coding-Hub</big></kbd></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <h1><img src="front.png" height="30" width="30">Izic✨ Coding-Hub</h1>
+  
+  <section>
+      <p>
+ Share your knowledge <big>&</big> also showcase your projects and Archivements. &nbsp<em><a href="https://wa.me/2349064178174?text=i was referred from izic✨ coding-hub. Here to share knowledge :">HERE!</a></em>
+      </p>
+      <hr>
+      <center>✨</center>
+      <hr>
+  <p>
+      win Amazingly here <br>&nbsp<em><a href="https://wa.me/2349064178174?text=i was referred from izic✨ coding-hub. interested in joining the competition. :">tap here to join the Competition!</a></em>
+  </p>
+  </section>
+  
+  <footer>
+      <p>Izic✨ Coding-Hub, Copyright &copy; 2024</p>
+    </footer>
+      <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+    body {
+    background: linear-gradient(135deg, #24271751, #618c92dd);
+    font-family: fantasy;
+}
+  nav{
+  background-color: none;
+  color: #fff;
+  padding: 0.5em;
+  margin: 0;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.hamburger-menu{
+  cursor: pointer;
+}
+
+.hamburger-menu span{
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+ a{
+  color: #072156f0;
+  text-decoration: none;
+  font-size: 20px;
+} 
+ .show{
+  display: block !important;
+} 
+    main{
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  padding: 0;
+} 
+
+  section{
+  padding: 1em;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+    
+footer{
+  padding:20px;
+  margin-top:20px;
+  color: azure;
+  background-color: #5c6464b4;
+  text-align: center;
+}
+  
+</style>
+
+<script>
+       /*menu*/
+    const hamburgerMenu= document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('ul');
+
+hamburgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+}); 
+</script>
