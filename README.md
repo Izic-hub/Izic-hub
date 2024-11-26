@@ -2,7 +2,7 @@
 - 👀 I love  coding 
 - 🌱 I’m currently learning .HTML,CSS & JAVASCRIPT!
 - 💞️ I’m looking to collaborate on .any project partaining html & css
-- 📫 How to reach me .whatsapp @+23490641781
+- 📫 How to reach me .whatsapp @+2349064178174
 - ⚡ Fun fact: just me a guitarist and a coder!
 
 <!---
