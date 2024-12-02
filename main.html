@@ -28,6 +28,7 @@
     <img src="front.png" height="30" width="30" alt="Logo">
     Izic✨ Coding-Hub
   </h1>
+       <div class="wrapper">  </div>
   <main>
       <section>
           <p>
@@ -160,6 +161,37 @@ li{
     background-color: #3e8e41;
 } 
  
+       
+    .wrapper{
+        width: 400px;
+        height: 250px;
+        babackground-size: 100% 100%;
+        box-shadow:  10px 10px 10px silver;
+        animation: BgAnimation 50s linear infinite;
+    }
+    @keyframes BgAnimation{
+       0%{
+           background-image: url('welcome.png');
+           background-size: cover;
+       } 
+       35%{
+           background-image: url('ai.png');
+           background-size: cover;
+       }
+       50%{
+           background-image: url('learn.png');
+           background-size: cover;
+       }
+       75%{
+           background-image: url('explore.png');
+           background-size: cover;
+       }
+       100%{
+           background-image: url('welcome.png');
+           background-size: cover;
+    }
+}
+
 footer{
   padding:20px;
   margin-top:20px;
